@@ -18,7 +18,7 @@ jobs:
       - name: Unzip project
         run: |
           mkdir proj
-          unzip -qo ZoneTaskManager.zip -d proj
+          unzip -qo ZoneTaskManager_v2.zip -d proj
           ROOT=$(dirname "$(find proj -name settings.gradle | head -n 1)")
           echo "PROJECT_DIR=$ROOT" >> "$GITHUB_ENV"
           echo "项目目录: $ROOT"
